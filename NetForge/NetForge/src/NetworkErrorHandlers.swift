@@ -9,6 +9,6 @@ import Foundation
 
 public enum NetworkError: Error {
     case request
-    case response
+    case response(String)
     case unknown
 }

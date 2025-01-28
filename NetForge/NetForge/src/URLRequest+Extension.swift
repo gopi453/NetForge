@@ -43,8 +43,24 @@ extension URLRequest {
 }
 
 extension URLResponse {
+    
+    func getStatusCode() -> Int {
+        guard let httpResponse = self as? HTTPURLResponse else {
+            return 0
+        }
+        return httpResponse.statusCode
+    }
+    
+    func getStatusCodeDescription() -> String {
+        guard let httpResponse = self as? HTTPURLResponse else {
+            return ""
+        }
+        return HTTPURLResponse.localizedString(forStatusCode: httpResponse.statusCode)
+    }
+    
     var hasValidStatusCode: Bool {
-        guard let httpResponse = self as? HTTPURLResponse, (200...299) ~= httpResponse.statusCode else {
+        
+        guard (200...299) ~= getStatusCode() else {
             return false
         }
         return true

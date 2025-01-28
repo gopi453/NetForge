@@ -22,6 +22,8 @@ public protocol RequestBuilder {
     var body: Data? { get }
     var queryItems: [URLQueryItem]? { get }
     var headers: [String: String] { get }
+    var decodeType: Any.Type { get }
+    
 }
 
 extension RequestBuilder {
@@ -41,4 +43,5 @@ extension RequestBuilder {
         guard let url = components?.url else { throw NetworkError.request }
         return url
     }
+
 }
