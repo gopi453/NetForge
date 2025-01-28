@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF3F6E002D48B2E900AEDDE7 /* NetForge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3F6DF52D48B2E900AEDDE7 /* NetForge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF3F6E012D48B2E900AEDDE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF3F6DEC2D48B2E900AEDDE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF3F6DF42D48B2E900AEDDE7;
+			remoteInfo = NetForge;
+		};
+		FF3F6E342D48B47A00AEDDE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF3F6DEC2D48B2E900AEDDE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF3F6E132D48B47900AEDDE7;
+			remoteInfo = NetForgeExamples;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF3F6DF52D48B2E900AEDDE7 /* NetForge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetForge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF3F6DFF2D48B2E900AEDDE7 /* NetForgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetForgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF3F6E142D48B47900AEDDE7 /* NetForgeExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetForgeExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF3F6E332D48B47A00AEDDE7 /* NetForgeExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetForgeExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FF3F6E072D48B2E900AEDDE7 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				NetForge.h,
+			);
+			target = FF3F6DF42D48B2E900AEDDE7 /* NetForge */;
+		};
+		FF3F6E3B2D48B47A00AEDDE7 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FF3F6E132D48B47900AEDDE7 /* NetForgeExamples */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FF3F6DF72D48B2E900AEDDE7 /* NetForge */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (FF3F6E072D48B2E900AEDDE7 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = NetForge; sourceTree = "<group>"; };
+		FF3F6E032D48B2E900AEDDE7 /* NetForgeTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = NetForgeTests; sourceTree = "<group>"; };
+		FF3F6E152D48B47900AEDDE7 /* NetForgeExamples */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (FF3F6E3B2D48B47A00AEDDE7 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = NetForgeExamples; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF3F6DF22D48B2E900AEDDE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF3F6DFC2D48B2E900AEDDE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF3F6E002D48B2E900AEDDE7 /* NetForge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF3F6E112D48B47900AEDDE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF3F6E302D48B47A00AEDDE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF3F6DEB2D48B2E900AEDDE7 = {
+			isa = PBXGroup;
+			children = (
+				FF3F6DF72D48B2E900AEDDE7 /* NetForge */,
+				FF3F6E032D48B2E900AEDDE7 /* NetForgeTests */,
+				FF3F6E152D48B47900AEDDE7 /* NetForgeExamples */,
+				FF3F6DF62D48B2E900AEDDE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF3F6DF62D48B2E900AEDDE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF3F6DF52D48B2E900AEDDE7 /* NetForge.framework */,
+				FF3F6DFF2D48B2E900AEDDE7 /* NetForgeTests.xctest */,
+				FF3F6E142D48B47900AEDDE7 /* NetForgeExamples.app */,
+				FF3F6E332D48B47A00AEDDE7 /* NetForgeExamplesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FF3F6DF02D48B2E900AEDDE7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FF3F6DF42D48B2E900AEDDE7 /* NetForge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF3F6E082D48B2E900AEDDE7 /* Build configuration list for PBXNativeTarget "NetForge" */;
+			buildPhases = (
+				FF3F6DF02D48B2E900AEDDE7 /* Headers */,
+				FF3F6DF12D48B2E900AEDDE7 /* Sources */,
+				FF3F6DF22D48B2E900AEDDE7 /* Frameworks */,
+				FF3F6DF32D48B2E900AEDDE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FF3F6DF72D48B2E900AEDDE7 /* NetForge */,
+			);
+			name = NetForge;
+			packageProductDependencies = (
+			);
+			productName = NetForge;
+			productReference = FF3F6DF52D48B2E900AEDDE7 /* NetForge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF3F6DFE2D48B2E900AEDDE7 /* NetForgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF3F6E0D2D48B2E900AEDDE7 /* Build configuration list for PBXNativeTarget "NetForgeTests" */;
+			buildPhases = (
+				FF3F6DFB2D48B2E900AEDDE7 /* Sources */,
+				FF3F6DFC2D48B2E900AEDDE7 /* Frameworks */,
+				FF3F6DFD2D48B2E900AEDDE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF3F6E022D48B2E900AEDDE7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FF3F6E032D48B2E900AEDDE7 /* NetForgeTests */,
+			);
+			name = NetForgeTests;
+			packageProductDependencies = (
+			);
+			productName = NetForgeTests;
+			productReference = FF3F6DFF2D48B2E900AEDDE7 /* NetForgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF3F6E132D48B47900AEDDE7 /* NetForgeExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF3F6E3C2D48B47A00AEDDE7 /* Build configuration list for PBXNativeTarget "NetForgeExamples" */;
+			buildPhases = (
+				FF3F6E102D48B47900AEDDE7 /* Sources */,
+				FF3F6E112D48B47900AEDDE7 /* Frameworks */,
+				FF3F6E122D48B47900AEDDE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FF3F6E152D48B47900AEDDE7 /* NetForgeExamples */,
+			);
+			name = NetForgeExamples;
+			packageProductDependencies = (
+			);
+			productName = NetForgeExamples;
+			productReference = FF3F6E142D48B47900AEDDE7 /* NetForgeExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF3F6E322D48B47A00AEDDE7 /* NetForgeExamplesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF3F6E422D48B47A00AEDDE7 /* Build configuration list for PBXNativeTarget "NetForgeExamplesUITests" */;
+			buildPhases = (
+				FF3F6E2F2D48B47A00AEDDE7 /* Sources */,
+				FF3F6E302D48B47A00AEDDE7 /* Frameworks */,
+				FF3F6E312D48B47A00AEDDE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF3F6E352D48B47A00AEDDE7 /* PBXTargetDependency */,
+			);
+			name = NetForgeExamplesUITests;
+			packageProductDependencies = (
+			);
+			productName = NetForgeExamplesUITests;
+			productReference = FF3F6E332D48B47A00AEDDE7 /* NetForgeExamplesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF3F6DEC2D48B2E900AEDDE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					FF3F6DF42D48B2E900AEDDE7 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					FF3F6DFE2D48B2E900AEDDE7 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					FF3F6E132D48B47900AEDDE7 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					FF3F6E322D48B47A00AEDDE7 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = FF3F6E132D48B47900AEDDE7;
+					};
+				};
+			};
+			buildConfigurationList = FF3F6DEF2D48B2E900AEDDE7 /* Build configuration list for PBXProject "NetForge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF3F6DEB2D48B2E900AEDDE7;
+			minimizedProjectReferenceProxies = 1;
+			productRefGroup = FF3F6DF62D48B2E900AEDDE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF3F6DF42D48B2E900AEDDE7 /* NetForge */,
+				FF3F6DFE2D48B2E900AEDDE7 /* NetForgeTests */,
+				FF3F6E132D48B47900AEDDE7 /* NetForgeExamples */,
+				FF3F6E322D48B47A00AEDDE7 /* NetForgeExamplesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF3F6DF32D48B2E900AEDDE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF3F6DFD2D48B2E900AEDDE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF3F6E122D48B47900AEDDE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF3F6E312D48B47A00AEDDE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF3F6DF12D48B2E900AEDDE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF3F6DFB2D48B2E900AEDDE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF3F6E102D48B47900AEDDE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF3F6E2F2D48B47A00AEDDE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF3F6E022D48B2E900AEDDE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF3F6DF42D48B2E900AEDDE7 /* NetForge */;
+			targetProxy = FF3F6E012D48B2E900AEDDE7 /* PBXContainerItemProxy */;
+		};
+		FF3F6E352D48B47A00AEDDE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF3F6E132D48B47900AEDDE7 /* NetForgeExamples */;
+			targetProxy = FF3F6E342D48B47A00AEDDE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FF3F6E092D48B2E900AEDDE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.NetForge;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF3F6E0A2D48B2E900AEDDE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.NetForge;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF3F6E0B2D48B2E900AEDDE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF3F6E0C2D48B2E900AEDDE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF3F6E0E2D48B2E900AEDDE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.NetForgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF3F6E0F2D48B2E900AEDDE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.NetForgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF3F6E3D2D48B47A00AEDDE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetForgeExamples/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.NetForgeExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF3F6E3E2D48B47A00AEDDE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetForgeExamples/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.NetForgeExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF3F6E432D48B47A00AEDDE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.NetForgeExamplesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetForgeExamples;
+			};
+			name = Debug;
+		};
+		FF3F6E442D48B47A00AEDDE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.NetForgeExamplesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetForgeExamples;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF3F6DEF2D48B2E900AEDDE7 /* Build configuration list for PBXProject "NetForge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF3F6E0B2D48B2E900AEDDE7 /* Debug */,
+				FF3F6E0C2D48B2E900AEDDE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF3F6E082D48B2E900AEDDE7 /* Build configuration list for PBXNativeTarget "NetForge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF3F6E092D48B2E900AEDDE7 /* Debug */,
+				FF3F6E0A2D48B2E900AEDDE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF3F6E0D2D48B2E900AEDDE7 /* Build configuration list for PBXNativeTarget "NetForgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF3F6E0E2D48B2E900AEDDE7 /* Debug */,
+				FF3F6E0F2D48B2E900AEDDE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF3F6E3C2D48B47A00AEDDE7 /* Build configuration list for PBXNativeTarget "NetForgeExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF3F6E3D2D48B47A00AEDDE7 /* Debug */,
+				FF3F6E3E2D48B47A00AEDDE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF3F6E422D48B47A00AEDDE7 /* Build configuration list for PBXNativeTarget "NetForgeExamplesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF3F6E432D48B47A00AEDDE7 /* Debug */,
+				FF3F6E442D48B47A00AEDDE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF3F6DEC2D48B2E900AEDDE7 /* Project object */;
+}
