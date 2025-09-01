@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF3F6E002D48B2E900AEDDE7 /* NetForge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3F6DF52D48B2E900AEDDE7 /* NetForge.framework */; };
+		FFCDB4A12E65F58C00DB9B2F /* NetForge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3F6DF52D48B2E900AEDDE7 /* NetForge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCDB4A12E65F58C00DB9B2F /* NetForge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +98,7 @@
 				FF3F6DF72D48B2E900AEDDE7 /* NetForge */,
 				FF3F6E032D48B2E900AEDDE7 /* NetForgeTests */,
 				FF3F6E152D48B47900AEDDE7 /* NetForgeExamples */,
+				FFCDB4A02E65F58C00DB9B2F /* Frameworks */,
 				FF3F6DF62D48B2E900AEDDE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +112,13 @@
 				FF3F6E332D48B47A00AEDDE7 /* NetForgeExamplesUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FFCDB4A02E65F58C00DB9B2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

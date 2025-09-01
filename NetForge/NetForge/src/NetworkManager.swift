@@ -1,6 +1,6 @@
 //
 //  NetworkManager.swift
-//  CyptoCoins
+//  NetForge
 //
 //  Created by K Gopi on 15/10/24.
 //
@@ -8,67 +8,62 @@
 import Foundation
 import Combine
 
-public final class NetworkManager {
-    private static let sharedInstance = NetworkManager()
+public protocol NetworkManagerProtocol {
+    func sendAsyncRequest<T: Decodable>(from request: RequestBuilder) async throws -> T
+    func sendPublisherRequest<T: Decodable>(from request: RequestBuilder) throws -> AnyPublisher<T, NetworkError>
+    func sendRequest<T: Decodable>(from request: RequestBuilder,_ completion: @escaping @Sendable (Result<T, NetworkError>) -> Void)
+}
+
+public final class NetworkManager: NetworkManagerProtocol {
+    
     private let session: URLSession
     
-    class func shared() -> NetworkManager {
-        return sharedInstance
-    }
+    private let logger: NetworkLoggerProtocol
     
-    init(session: URLSession = .shared) {
+    public init(session: URLSession = .shared, logger: NetworkLoggerProtocol = DefaultNetworkLogger()) {
         self.session = session
-    }
-
-    @MainActor
-    func makeAsyncRequest(from request: RequestBuilder) async throws -> Any {
-        let urlRequest = try createURLRequest(from: request)
-        let (data, response) = try await session.data(for: urlRequest)
-        let responseParser = ResponseParser(data: data, response: response, decodeType: request.decodeType)
-        return try responseParser.parse()
+        self.logger = logger
     }
     
-    func makePublisherRequest(from request: RequestBuilder) throws -> AnyPublisher<Any, NetworkError> {
-        do {
-            let urlRequest = try createURLRequest(from: request)
-            return self.session.dataTaskPublisher(for: urlRequest)
-                .tryMap({ (data: Data, response: URLResponse) -> Any in
-                    let responseParser = ResponseParser(data: data, response: response, decodeType: request.decodeType)
-                    return try responseParser.parse()
-                })
-                .mapError { error in
-                    (error as? NetworkError) ?? .unknown
-                }
-                .receive(on: DispatchQueue.main)
-                .eraseToAnyPublisher()
-        } catch {
-            return Fail(error: NetworkError.request).eraseToAnyPublisher()
-        }
-    }
-    
-
-    func makeRequest(from request: RequestBuilder,_ completion: @escaping (Result<Any, NetworkError>) -> Void) {
+    //MARK: - Request Methods
+    public func sendRequest<T>(from request: any RequestBuilder, _ completion: @escaping @Sendable (Result<T, NetworkError>) -> Void) where T : Decodable {
         do {
             let urlRequest = try createURLRequest(from: request)
             self.session.dataTask(with: urlRequest) { data, response, error in
-                let responseParser = ResponseParser(data: data, response: response, error: error, decodeType: request.decodeType)
+                let responseParser = ResponseParser<T>(data: data, response: response, error: error)
                 do {
                     let dataObj = try responseParser.parse()
-                    DispatchQueue.main.async {
-                        completion(.success(dataObj))
-                    }
-                    
+                    completion(.success(dataObj))
                 } catch {
-                    DispatchQueue.main.async {
-                        completion(.failure(NetworkError.response(error.localizedDescription)))
-                    }
+                    completion(.failure(NetworkError.response(error.localizedDescription)))
                 }
             }.resume()
         }  catch {
             completion(.failure(NetworkError.request))
         }
-        
     }
+    
+    public func sendAsyncRequest<T>(from request: any RequestBuilder) async throws -> T where T : Decodable {
+        let urlRequest = try createURLRequest(from: request)
+        let (data, response) = try await session.data(for: urlRequest)
+        let responseParser = ResponseParser<T>(data: data, response: response)
+        return try responseParser.parse()
+    }
+    
+    public func sendPublisherRequest<T>(from request: any RequestBuilder) throws -> AnyPublisher<T, NetworkError> where T : Decodable {
+        let urlRequest = try createURLRequest(from: request)
+        return self.session.dataTaskPublisher(for: urlRequest)
+            .tryCompactMap({ (data: Data, response: URLResponse) -> T in
+                let responseParser = ResponseParser<T>(data: data, response: response)
+                return try responseParser.parse()
+            })
+            .mapError { error in
+                (error as? NetworkError) ?? .unknown
+            }
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
+    }
+    
 }
 
 private extension NetworkManager {
@@ -78,9 +73,8 @@ private extension NetworkManager {
         urlRequest.httpMethod = request.method.description
         urlRequest.httpBody = request.body
         urlRequest.allHTTPHeaderFields = request.headers
-#if DEBUG
-        print(urlRequest.toCurl())
-#endif
+        logger.log(request: urlRequest)
+        logger.toCurl(for: urlRequest)
         return urlRequest
     }
 }
